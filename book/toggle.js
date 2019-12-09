@@ -16,7 +16,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       } else if (document.selection) {
           t = document.selection.createRange().text;
       }
-      return t;
+      return t.toString().trim();
   }
   
   function copyToClipboard(text) {
